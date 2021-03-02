@@ -1,0 +1,39 @@
+.search-form{
+    width: 50%;
+    margin: 50px auto;
+}
+
+.search-form .search-form--search{
+    width: 100%;
+    height: 40px;
+    border-radius: 6px;
+    border: none;
+    padding: 0 10px;
+    font-size: 18px;
+    outline-color: red;
+    outline-width: 2px;
+}
+
+@media (max-width: 500px){
+    .search-form{
+        width: 90%;
+    }
+}
+
+@media (min-width: 500px){
+    .search-form{
+        width: 80%;
+    }
+}
+
+@media (min-width: 768px){
+    .search-form{
+        width: 90%;
+    }
+}
+
+@media (min-width: 1000px){
+    .search-form{
+        width: 80%;
+    }
+}
