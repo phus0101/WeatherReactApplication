@@ -56,9 +56,19 @@ export default function App() {
   }, [query]);
 
   function handleOnKeyPress(e) {
+    let value = e.target.value;
+    value = value
+      .toString()
+      .replace(/[aAàÀảẢãÃáÁạẠăĂằẰẳẲẵẴắẮặẶâÂầẦẩẨẫẪấẤậẬ]/, 'a')
+      .replace(/[dDđĐ]/, 'd')
+      .replace(/[eEèÈẻẺẽẼéÉẹẸêÊềỀểỂễỄếẾệỆ]/, 'e')
+      .replace(/[iIìÌỉỈĩĨíÍịỊ]/, 'i')
+      .replace(/[oOòÒỏỎõÕóÓọỌôÔồỒổỔỗỖốỐộỘơƠờỜởỞỡỠớỚợỢ]/, 'o')
+      .replace(/[uUùÙủỦũŨúÚụỤưƯừỪửỬữỮứỨựỰ]/, 'u')
+      .replace(/[yYỳỲỷỶỹỸýÝỵỴ]/, 'y');
     if (e.key === 'Enter') {
       setQuery({
-        ...query, q: e.target.value
+        ...query, q: value
       });
     }
   }

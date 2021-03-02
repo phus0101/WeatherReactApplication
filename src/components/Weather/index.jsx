@@ -14,10 +14,10 @@ function Weather(props) {
     const { data } = props;
 
     let date = new Date(Date.now());
-    let dayOfWeek = ['Monday', 'Tuesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+    let dayOfWeek = ['Chủ nhật', 'Thứ hai', 'Thứ ba', 'Thứ tư', 'Thứ năm', 'Thứ sáu', 'Thứ bảy'];
     let hours = date.getHours().toString().padStart(2, '0');
     let minutes = date.getMinutes().toString().padStart(2, '0');
-    let formatAMPM = hours >= 12 ? "PM" : "AM";
+    let formatAMPM = hours >= 12 ? "Chiều" : "Sáng";
 
     return (
         <div className="weather">
