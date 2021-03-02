@@ -1,6 +1,6 @@
 .weather{
     background-color: #555375;
-    width: 50%;
+    width: 70%;
     margin: 50px auto;
     text-align: center;
     padding: 20px;
@@ -29,13 +29,13 @@
 
 .weather .weather--date{
     margin-top: 10px;
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 300;
 }
 
 .weather .detailOthers{
-    width: 40%;
-    font-size: 2rem;
+    width: 80%;
+    font-size: 2.5rem;
     font-weight: 300;
     display: flex;
     flex-wrap: wrap;
@@ -47,24 +47,74 @@
     margin: 10px 0;
 }
 
-@media (max-width: 500px){
+@media screen and (max-width: 992px){
+    .weather{
+        width: 80%;
+        padding: 10px;
+    }
+
+    .weather .weather--city{
+        font-size: 4rem;
+    }
+
+    .weather .weather--description{
+        font-size: 3rem;
+    }
+
+    .weather .weather--date{
+        font-size: 3rem;
+    }
+
+    .weather .detailOthers{
+        width: 80%;
+    }
+
+    .weather .detailOthers p{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .weather{
+        width: 80%;
+        padding: 10px;
+    }
+
+    .weather .weather--date{
+        font-size: 3rem;
+    }
+
+    .weather .detailOthers{
+        width: 80%;
+    }
+
+    .weather .detailOthers p{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 576px){
     .weather{
         width: 90%;
         padding: 10px;
     }
 
     .weather .weather--city{
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     .weather .weather--temp{
-        font-size: 4rem;
+        font-size: 3rem;
     }
 
     .weather .weather--icon{
         width: 70px;
     }
 
+    .weather .weather--date{
+        font-size: 2rem;
+    }
+
     .weather .weather--description{
         font-size: 2rem;
     }
@@ -74,69 +124,16 @@
     }
 
     .weather .detailOthers p{
-        font-size: 1.6rem;
+        font-size: 1.5rem;
     }
 }
 
-@media (min-width: 500px){
-    .weather{
-        width: 80%;
-        padding: 10px;
-    }
 
-    .weather .weather--city{
-        font-size: 3rem;
-    }
 
-    .weather .weather--temp{
-        font-size: 4rem;
-    }
 
-    .weather .weather--icon{
-        width: 100px;
-    }
 
-    .weather .weather--description{
-        font-size: 2rem;
-    }
-
-    .weather .weather--date,
-    .weather .detailOthers p{
-        font-size: 1.6rem;
-    }
-
+/* @media screen and (max-width: 1200px){
     .weather .detailOthers{
-        width: 100%;
-    }
-}
-
-@media (min-width: 768px){
-    .weather{
-        width: 90%;
-        padding: 10px;
-    }
-
-    .weather .weather--date, 
-    .weather .detailOthers p{
-        font-size: 2rem;
-    }
-}
-
-@media (min-width: 1000px){
-    .weather{
         width: 80%;
-        padding: 10px;
     }
-
-    .weather .weather--icon{
-        width: 150px;
-    }
-
-    .weather .weather--date, .weather .weather--description{
-        font-size: 3rem;
-    }
-
-    .weather .detailOthers p{
-        font-size: 2.5rem;
-    }
-}
+} */
