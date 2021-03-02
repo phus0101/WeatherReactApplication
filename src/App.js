@@ -5,7 +5,7 @@ import axios from "axios";
 import SearchForm from './components/SearchForm';
 
 export default function App() {
-  const url = "http://api.openweathermap.org/data/2.5/weather";
+  const url = "https://api.openweathermap.org/data/2.5/weather";
   const [dataWeather, setDataWeather] = useState({
     main: "",
     description: "",
